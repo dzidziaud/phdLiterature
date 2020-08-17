@@ -1,0 +1,31 @@
+caption: Citations
+created: 20200812214832570
+modified: 20200812215000881
+tags: 
+title: $:/_tab/citations
+
+<small>''<$count filter="[field:category/citation/source{!!title}]" /> citations of this text - ''<$button message="tw-new-tiddler" class="btn-invisible" param="$:/_Template/Citation">New citation</$button><br></small>
+
+<$list filter="[field:category/citation/source{!!title}nsort[pages]]">
+
+<h2><$transclude field="description"/></h2>
+
+<<<
+
+<$transclude/>
+
+<small>
+
+@@text-align:right;
+
+<$link to={{!!title}}>(p. <$view field="pages"/>)
+</$link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{!!title||$:/_notes&more}}
+
+@@
+
+</small>
+
+<<<  
+
+<hr>
+</$list>

@@ -1,0 +1,11 @@
+category: button
+created: 20200812182547736
+modified: 20200813201221957
+tags: $:/tags/ViewToolbar
+title: $:/_button/Close-others-button
+
+<span title="Close other tiddlers">
+<$button message="tw-close-other-tiddlers" class="btn-invisible">
+{{$:/_images/close-others-button}}
+</$button>
+</span>

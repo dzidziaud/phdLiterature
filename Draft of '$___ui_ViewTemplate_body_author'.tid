@@ -1,0 +1,37 @@
+created: 20200812201425053
+draft.of: $:/_ui/ViewTemplate/body/author
+draft.title: $:/_ui/ViewTemplate/body/author
+modified: 20200814010737957
+tags: $:/tags/ViewTemplate
+title: Draft of '$:/_ui/ViewTemplate/body/author'
+
+<$list filter="[is[current]category[author]!is[system]]">
+
+<div class="body">
+<image-right>{{$:/_images/author.png}}</image-right>
+<justify>
+<$transclude/>
+</justify>
+<small>
+<hr>
+''<$count filter="+[field:category/paper/] [author{!!name}] [author2{!!name}] [author3{!!name}] [author4{!!name}] [author5{!!name}] [author6{!!name}] [author7{!!name}][author8{!!name}]" /> papers'' — <$button message="tw-new-tiddler" class="btn-invisible" param="$:/_Template/Paper">, new paper</$button><br>
+</small>
+
+<$list filter="+[field:category/paper/] [author{!!name}] [author2{!!name}] [author3{!!name}] [author4{!!name}] [author5{!!name}] [author6{!!name}] [author7{!!name}] [author8{!!name}] +[sort[title]]" template="list"/>
+
+
+{{!!title||$:/_footerCategories}}
+
+</div>
+
+<div class="tw-tiddler-title">
+
+<$reveal type="nomatch" text="" default="" state=<<tiddlerInfoState2>> class="tw-tiddler-info tw-popup" animate="yes">
+
+<$transclude tiddler="$:/_ui/TiddlerInfo/author"/>
+
+</$reveal>
+
+</div>
+
+</$list>

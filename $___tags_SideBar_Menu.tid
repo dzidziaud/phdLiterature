@@ -1,0 +1,11 @@
+caption: Menu
+created: 20200812220744018
+list: $:/_ui/SideBar/Menu/Authors $:/_ui/SideBar/Menu/Papers $:/_ui/SideBar/Menu/Topics
+list-before: $:/core/ui/SideBar/Open
+modified: 20200813192258961
+tags: $:/tags/SideBar
+title: $:/_tags/SideBar/Menu
+
+<div class="tw-more-sidebar">
+<<tabs "[is[shadow]!has[draft.of]tag[$:/_tags/SideBar/Menu]] [!is[shadow]!has[draft.of]tag[$:/_tags/SideBar/Menu]] +[tag[$:/_tags/SideBar/Menu]]" "$:/_ui/SideBar/Home/Authors" "$:/state/tab/menusidebar">>
+</div>

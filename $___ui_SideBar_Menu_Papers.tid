@@ -1,0 +1,10 @@
+caption: Papers
+created: 20200812215016940
+modified: 20200813220641551
+tags: $:/_tags/SideBar/Menu
+title: $:/_ui/SideBar/Menu/Papers
+
+<$button message="tm-new-tiddler" param="$:/_Template/Paper">New Paper</$button>
+
+
+<$list filter="[field:category/paper/sort[title]] -[[$:/_Template/Paper]]"/>

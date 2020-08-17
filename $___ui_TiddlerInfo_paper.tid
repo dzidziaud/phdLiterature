@@ -1,0 +1,11 @@
+created: 20200812214127227
+modified: 20200813193941027
+tags: 
+title: $:/_ui/TiddlerInfo/paper
+
+<$list filter="[is[current]!field:category/topic/]">
+<<tabs "$:/_tab/citations $:/_tab/notes" "$:/_tab/citations">>
+</$list>
+<$list filter="[is[current]field:category/topic/]">
+<<tabs "$:/_tab/citations $:/_tab/notes">>
+</$list>

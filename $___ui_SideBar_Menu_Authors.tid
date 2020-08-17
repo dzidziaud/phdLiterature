@@ -1,0 +1,9 @@
+caption: Authors
+created: 20200813215613208
+modified: 20200814021507647
+tags: $:/_tags/SideBar/Menu
+title: $:/_ui/SideBar/Menu/Authors
+
+<$list filter="[field:author|author2|author3|author4/!is[system]]"/>
+
+

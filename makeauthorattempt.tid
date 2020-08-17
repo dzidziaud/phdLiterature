@@ -1,0 +1,17 @@
+created: 20200814003607435
+modified: 20200814012709302
+tags: 
+title: makeauthorattempt
+
+\define testCreate()
+<$action-createtiddler 
+$basetitle= "+[field:category/paper/] [author{!!name}]"
+$template="$:/_Template/Author"
+/>
+\end
+
+
+
+<$button actions=<<testCreate>> >
+Create Author Tiddler
+</$button>

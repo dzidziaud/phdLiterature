@@ -1,0 +1,34 @@
+created: 20200812211039063
+modified: 20200814015858118
+tags: $:/tags/ViewTemplate
+title: $:/_ui/ViewTemplate/body/paper
+
+<$list filter="[is[current]field:category/paper/]">
+@@
+<small>
+
+Authors: <$view field="author"/>, 
+<$view field="author2"/>,
+<$view field="author3"/>,
+<$view field="author4"/>,
+<$view field="author5"/>,
+<$view field="author6"/>,
+<$view field="author7"/>,
+<$view field="author8"/>
+
+</small>
+@@
+
+
+
+<div class="tw-tiddler-title">
+
+<$reveal type="nomatch" text="" default="" state=<<tiddlerInfoState2>> class="tw-tiddler-info tw-popup" animate="yes">
+
+<$transclude tiddler="$:/_ui/TiddlerInfo/paper"/>
+
+</$reveal>
+
+</div>
+
+</$list>

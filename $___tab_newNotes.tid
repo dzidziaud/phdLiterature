@@ -1,0 +1,7 @@
+caption: +
+created: 20200812222900436
+modified: 20200812223130496
+tags: 
+title: $:/_tab/newNotes
+
+<$button message="tw-new-tiddler" class="" param="$:/_Template/Paper">New section</$button>

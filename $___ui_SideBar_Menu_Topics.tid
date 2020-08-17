@@ -1,0 +1,10 @@
+caption: Topics
+created: 20200812220238854
+modified: 20200814023016193
+tags: $:/_tags/SideBar/Menu
+title: $:/_ui/SideBar/Menu/Topics
+
+
+<$button message="tm-new-tiddler" param="$:/_Template/Topic">New Topic</$button>
+
+<$list filter="[category[topic]!title[$:/_Template/Topic]sort[title]]" param="$:/core/ui/ListItemTemplate"/>
