@@ -1,0 +1,11 @@
+created: 20200812213533770
+modified: 20200812213732373
+tags: 
+title: Categories
+
+* author
+* paper
+* citation
+* topic
+
+<<tabs "$:/aa/ui/SideBarAuthors Papers $:/aa/ui/SideBarTopics" "$:/aa/ui/SideBarAuthors" 1>>

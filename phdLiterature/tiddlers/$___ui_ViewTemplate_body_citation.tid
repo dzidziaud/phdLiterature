@@ -1,0 +1,31 @@
+created: 20200812201330556
+modified: 20200812213248718
+tags: $:/tags/ViewTemplate
+title: $:/_ui/ViewTemplate/body/citation
+
+<$list filter="[is[current]field:category/citation/]">
+<div class="body">
+
+!!<$transclude field="description"/>
+
+<<<
+
+<$transclude/>
+
+<<< <$link to={{!!source}}><$view field="source"/></$link>
+
+{{!!title||$:/_footerCategories}}
+
+</div>
+
+<div class="tw-tiddler-title">
+
+<$reveal type="nomatch" text="" default="" state=<<tiddlerInfoState2>> class="tw-tiddler-info tw-popup" animate="yes">
+
+<$transclude tiddler="$:/_ui/TiddlerInfo/citation"/>
+
+</$reveal>
+
+</div>
+
+</$list>

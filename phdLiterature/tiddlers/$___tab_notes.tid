@@ -1,0 +1,22 @@
+caption: notes
+created: 20200812222712579
+modified: 20200812222833972
+tags: 
+title: $:/_tab/notes
+
+<$list filter="[is[current]field:category/paper/]">
+   <image-right>
+      {{$:/_images/paper.png}}
+   </image-right>
+</$list>
+
+<justify>
+
+<$transclude/>
+
+<$list filter="[is[current]text[]]">
+
+  {{LoremIpsum}}
+
+</$list>
+</justify>
